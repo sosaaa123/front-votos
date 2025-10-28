@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import "./App.css"
-import Stand from "./stand"
+import Stand from "./Stand"
 import Principal from "./Principal"
 function App() {
   return (
