@@ -5,7 +5,7 @@ export default function Principal() {
       <h2>Escuela de Educación Secundaria Técnica Nro1</h2>
       <h3>Ing Jose Rafael Canton</h3>
       <div className="redes">
-        <button>
+        <button className="">
           <i class="fa-brands fa-facebook"></i>
         </button>
         <button>
