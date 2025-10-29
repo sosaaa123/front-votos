@@ -1,16 +1,26 @@
+import "./Principal.css"
+
 export default function Principal() {
   return (
     <section className="principal">
-      <h1>Expotec 2025</h1>
-      <h2>Escuela de Educación Secundaria Técnica Nro1</h2>
-      <h3>Ing Jose Rafael Canton</h3>
-      <div className="redes">
-        <button className="">
-          <i class="fa-brands fa-facebook"></i>
-        </button>
-        <button>
-          <i class="fa-brands fa-instagram"></i>
-        </button>
+      <div>
+        <h1>Expotec 2025</h1>
+        <h2>Escuela de Educación Secundaria Técnica Nro1</h2>
+        <h3>Ing Jose Rafael Canton</h3>
+      </div>
+      <div className="r">
+        <div className="redes">
+          <button className="fb">
+            <a href="https://www.facebook.com/tecnicabrandsen/?locale=es_LA">
+              <i className="fa-brands fa-facebook-f"></i>
+            </a>
+          </button>
+          <button className="ig">
+            <a href="https://www.instagram.com/expotecnica1/">
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+          </button>
+        </div>
       </div>
     </section>
   )

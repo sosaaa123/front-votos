@@ -1,0 +1,65 @@
+.principal {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.principal h3 {
+  color: #808080;
+  font-weight: 500;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.redes button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.fb a {
+  color: #74aff2;
+}
+
+.fb:hover {
+  background-color: #accdf2;
+  color: #c9ddf3;
+}
+
+.ig:hover {
+  background-color: #f0bcbc;
+}
+
+.ig a {
+  color: #f15f5f;
+  width: 100%;
+  height: 100%;
+}
+
+.fb {
+  background-color: #dee8f5;
+  color: #74aff2;
+  font-size: 1rem;
+}
+
+.ig {
+  background-color: #fad7d7;
+  color: #f15f5f;
+  font-size: 1.3rem;
+}
+
+.r {
+  margin-top: 5rem;
+}

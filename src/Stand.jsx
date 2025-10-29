@@ -50,7 +50,9 @@ export default function Stand() {
     <>
       <div className="cont">
         <div className="s">
-          <nav>Expotec 2025</nav>
+          <nav>
+            <p className="exp">Expotec </p> <p className="year"> 2025</p>
+          </nav>
         </div>
 
         <div className="info">

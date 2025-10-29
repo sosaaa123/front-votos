@@ -116,6 +116,23 @@ nav {
   padding: 0;
   margin: 0%;
   font-size: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+s p {
+  margin: 0%;
+}
+
+.exp {
+  color: #f15f5f;
+  margin: 0%;
+  margin-right: 6px;
+}
+
+.year {
+  margin: 0%;
+  color: #8fbff7;
 }
 
 .dat1 {
@@ -194,12 +211,16 @@ nav {
 }
 
 .s {
+  padding: 0.5em;
+  background-color: #f8f6f6;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   flex-shrink: 0;
+  font-size: 0.9em;
 }
 
 .btn-div {
