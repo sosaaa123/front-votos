@@ -26,7 +26,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0 0 0;
+  padding: 1rem 0 5rem 0;
   background: linear-gradient(#bad5f4, #e9e8e8);
   overflow: hidden;
 }
@@ -210,7 +210,6 @@ nav {
   width: 100%;
   padding: 0;
   flex-shrink: 0;
-  margin-top: auto;
 }
 
 @media (max-height: 700px) {
