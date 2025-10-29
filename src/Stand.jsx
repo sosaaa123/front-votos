@@ -7,6 +7,10 @@ export default function Stand() {
   const [datos, setDatos] = useState([])
   const [mensaje, setMensaje] = useState("")
   const [confetti, setConfetti] = useState(false)
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  })
   useEffect(() => {
     fetch(`https://conteo-de-votos-2025.vercel.app/stands/${id}`)
       .then((res) => res.json())
@@ -27,7 +31,14 @@ export default function Stand() {
         setMensaje(result.mensaje)
         console.log(result)
         alert(result.mensaje)
-        setConfetti(true)
+        if (result.estado) {
+          setConfetti(true)
+          setTimeout(() => {
+            setConfetti(false)
+          }, 8000)
+        } else {
+          setConfetti(false)
+        }
       })
   }
 
@@ -40,12 +51,11 @@ export default function Stand() {
       <div className="cont">
         <div className="s">
           <nav>Expotec 2025</nav>
-          <Icono especialidad={datos.orientacion}></Icono>
         </div>
 
         <div className="info">
+          <Icono especialidad={datos.orientacion}></Icono>
           <h1 className="titulo">{datos.nombre}</h1>
-
           <p className="descripcion"> {datos.descripcion}</p>
           <div className="dat1">
             <div>
@@ -62,7 +72,7 @@ export default function Stand() {
               <i class="fa-solid fa-book"></i>
             </div>
             <div className="cont1">
-              <p className="dato">Materia {datos.materia}</p>
+              <p className="dato">{datos.materia}</p>
               <p className="inf">Materia</p>
             </div>
           </div>
@@ -71,8 +81,8 @@ export default function Stand() {
               <i class="fa-solid fa-user"></i>
             </div>
             <div className="cont1">
-              <p className="dato">Profesor {datos.profesor}</p>
-              <p className="inf">Profesor</p>
+              <p className="dato">{datos.profesor}</p>
+              <p className="inf">Docente</p>
             </div>
           </div>
         </div>
@@ -81,8 +91,15 @@ export default function Stand() {
             Votar
           </button>
         </div>
-        <button onClick={votar}>confetti</button>
-        {confetti ? <Confetti width={400} height={700} /> : <div></div>}
+        {confetti ? (
+          <Confetti
+            width={windowSize.width}
+            height={windowSize.height}
+            gravity={0.2}
+          />
+        ) : (
+          ""
+        )}
       </div>
     </>
   )
