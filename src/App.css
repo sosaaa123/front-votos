@@ -26,13 +26,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0 10rem 0;
+  padding: 1rem 0 5rem 0;
   background: linear-gradient(#bad5f4, #e9e8e8);
   overflow: hidden;
 }
 
 .icono i {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #fd9393;
 }
 
@@ -43,10 +43,10 @@ body {
   justify-content: center;
   width: 1.8rem;
   height: 1.8rem;
-  padding: 2.2em;
+  padding: 1.8rem;
   background-color: #fad7d7;
   border-radius: 50%;
-  margin-top: 5%;
+  margin-bottom: 3%;
 }
 
 .titulo {
@@ -70,7 +70,7 @@ body {
   min-height: 12rem;
   box-shadow: 2px 2px 2px 1px #dcdcdc;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
   flex-shrink: 0;
 }

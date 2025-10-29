@@ -42,14 +42,19 @@ export default function Stand() {
       })
   }
 
+  const conf = () => {
+    setConfetti(true)
+  }
+
   return (
     <>
       <div className="cont">
         <div className="s">
           <nav>Expotec 2025</nav>
         </div>
-        <Icono especialidad={datos.orientacion}></Icono>
+
         <div className="info">
+          <Icono especialidad={datos.orientacion}></Icono>
           <h1 className="titulo">{datos.nombre}</h1>
           <p className="descripcion"> {datos.descripcion}</p>
           <div className="dat1">
