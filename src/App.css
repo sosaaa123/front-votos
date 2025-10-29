@@ -26,7 +26,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0 10rem 0;
+  padding: 1rem 0 15rem 0;
   background: linear-gradient(#bad5f4, #e9e8e8);
   overflow: hidden;
 }
