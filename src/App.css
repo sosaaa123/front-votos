@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0 0 0;
+  padding: 1rem 0 8rem 0;
   background: linear-gradient(#bad5f4, #e9e8e8);
   overflow: hidden;
 }
@@ -69,8 +69,8 @@ body {
   min-height: 12rem;
   box-shadow: 2px 2px 2px 1px #dcdcdc;
   margin: 0 auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   flex-shrink: 0;
 }
 
