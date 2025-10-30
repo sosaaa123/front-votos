@@ -1,0 +1,83 @@
+.standes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    #bad5f4,
+    #c7dbf2,
+    #e5ecf3,
+    #f9e1e1,
+    #fad7d7,
+    #f6d5d5,
+    #ffc9c9
+  );
+}
+
+.standes h1 {
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+
+.standes a {
+  text-decoration: none;
+  width: 85%;
+}
+
+.standes-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1.1rem 1rem;
+  margin: 3% 0;
+  border-radius: 20px;
+  background-color: #f8f6f6;
+  box-shadow: 1px 1px 2px 1px #dcdcdc;
+  gap: 8%;
+}
+
+.inff {
+  width: 80%;
+}
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9px;
+  background-color: #e9e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 1px 1px #dcdcdc;
+}
+
+.icon i {
+  font-size: 0.8em;
+  color: #fec0c0;
+}
+
+.standes-cont h3 {
+  color: black;
+  font-size: 0.9em;
+  margin: 0;
+  font-weight: 500;
+}
+
+.standes-cont p {
+  font-size: 0.7em;
+  margin-bottom: 0;
+  margin-top: 1%;
+  color: #7b7b7b;
+  font-weight: 400;
+}
+
+.pes {
+  display: flex;
+  flex-direction: row;
+}
+
+.pes p {
+  margin-right: 3px;
+}
