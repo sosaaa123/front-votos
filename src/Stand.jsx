@@ -41,6 +41,7 @@ export default function Stand() {
             setConfetti(false)
           }, 800000)
         } else {
+          if (result.ya_voto) setNt(true)
           setVt(true)
         }
       })
@@ -55,10 +56,16 @@ export default function Stand() {
       <div className="cont">
         {vt ? (
           <div className="igg">
-            <div className="ppp">
-              <i class="fa-solid fa-check"></i>
-            </div>
-            <h1 className="titulo">{mensaje}</h1>
+            {nt ? (
+              <div className="ppp x">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            ) : (
+              <div className="ppp v">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            )}
+            <h1 className="titulo mm">{mensaje}</h1>
             <p className="ccc">Expotec 2025</p>
           </div>
         ) : (
