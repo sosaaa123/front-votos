@@ -74,6 +74,42 @@ body {
   flex-shrink: 0;
 }
 
+.igg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 4rem 1.5rem;
+  border-radius: 20px;
+  background-color: #f8f6f6;
+  width: 90%;
+  max-width: 400px;
+  min-height: 20rem;
+}
+
+.ppp {
+  width: 1rem;
+  height: 1rem;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #a9f4a9;
+  border-radius: 50%;
+  margin-bottom: 4%;
+}
+
+.ppp i {
+  font-size: 2rem;
+  color: #f8f6f6;
+}
+
+.ccc {
+  color: #494848;
+}
+
 .dat2 {
   background-color: #f8f6f6;
   width: 90%;
