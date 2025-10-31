@@ -1,9 +1,10 @@
 #root {
   width: 100%;
-  height: 80vw;
+  height: 100vh;
   padding: 0%;
   margin: 0%;
 }
+
 body {
   margin: 0%;
   width: 100%;
@@ -19,14 +20,16 @@ body {
 .cont {
   font-family: "Space Grotesk", "sans-serif";
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 1rem 0 2rem 0;
+  padding: 0.3rem 0;
   background: linear-gradient(#bad5f4, #e9e8e8);
   overflow: hidden;
+  gap: 0.3rem;
 }
 
 .icono i {
@@ -41,16 +44,17 @@ body {
   justify-content: center;
   width: 1.8rem;
   height: 1.8rem;
-  padding: 1.8rem;
+  padding: 0.8rem;
   background-color: #fad7d7;
   border-radius: 50%;
-  margin-bottom: 3%;
+  margin-bottom: 0;
+  flex-shrink: 0;
 }
 
 .titulo {
   text-align: center;
-  font-size: 1.5em;
-  margin: 0.5rem;
+  font-size: 1.2em;
+  margin: 0.1rem;
   font-weight: 500;
 }
 
@@ -59,18 +63,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1.5rem;
+  padding: 0.8rem;
   border-radius: 20px;
   background-color: #f8f6f6;
   width: 90%;
   max-width: 400px;
   height: auto;
-  min-height: 12rem;
   box-shadow: 2px 2px 2px 1px #dcdcdc;
   margin: 0 auto;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
   flex-shrink: 0;
+  gap: 0.3rem;
 }
 
 .igg {
@@ -79,25 +81,28 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: 4rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   border-radius: 20px;
   background-color: #f8f6f6;
   width: 90%;
   max-width: 400px;
-  min-height: 20rem;
+  min-height: auto;
+  flex-shrink: 0;
+  gap: 0.5rem;
 }
 
 .ppp {
   width: 1rem;
   height: 1rem;
-  padding: 1.6rem;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #a9f4a9;
   border-radius: 50%;
-  margin-bottom: 4%;
+  margin-bottom: 0;
+  flex-shrink: 0;
 }
 
 .ppp i {
@@ -107,13 +112,15 @@ body {
 
 .ccc {
   color: #494848;
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 .dat2 {
   background-color: #f8f6f6;
   width: 90%;
   max-width: 400px;
-  padding: 0.6em 1.5rem;
+  padding: 0.4em 1rem;
   border-radius: 12px;
   display: flex;
   flex-direction: row;
@@ -149,7 +156,7 @@ body {
 nav {
   padding: 0;
   margin: 0%;
-  font-size: 1em;
+  font-size: 0.9em;
   display: flex;
   flex-direction: row;
 }
@@ -172,13 +179,13 @@ s p {
 .dat1 {
   display: flex;
   flex-direction: row;
-  font-size: 0.7em;
+  font-size: 0.65em;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 0.3rem;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.4rem;
 }
 
 .dat1 div {
@@ -195,17 +202,17 @@ s p {
 
 .descripcion {
   text-align: center;
-  font-size: 0.9rem;
-  line-height: 1.3;
+  font-size: 0.8rem;
+  line-height: 1.2;
   color: #646363;
-  margin: 0.5rem 0;
+  margin: 0;
 }
 
 .boton {
-  margin: 2%;
+  margin: 0.3rem 0;
   width: 90%;
   max-width: 400px;
-  padding: 0.7rem 0.6em;
+  padding: 0.6rem 0.6em;
   border: none;
   box-shadow: 1px 1px 2px rgb(139, 139, 139);
   background-color: #f26f6f;
@@ -213,20 +220,21 @@ s p {
   border-radius: 15px;
   font-size: 0.9rem;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .dato {
   text-align: left;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   width: 100%;
-  margin-left: 1rem;
+  margin: 0;
 }
 
 .inf {
-  font-size: 0.65em;
+  font-size: 0.6em;
   color: #646363;
   text-align: left;
-  margin-left: 1rem;
+  margin: 0;
 }
 
 .cont1 {
@@ -240,21 +248,22 @@ s p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.8rem;
+  gap: 0.3rem;
   flex-shrink: 0;
+  margin: 0.2rem 0;
 }
 
 .s {
-  padding: 0.5em;
+  padding: 0.3em;
   background-color: #f8f6f6;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0;
   flex-shrink: 0;
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 
 .btn-div {
@@ -265,28 +274,103 @@ s p {
   width: 100%;
   padding: 0;
   flex-shrink: 0;
+  margin: 0.2rem 0;
 }
 
 @media (max-height: 700px) {
   .cont {
-    gap: 1rem;
-    padding: 0.5rem 0 1.5rem 0;
+    padding: 0.2rem 0;
+    gap: 0.2rem;
   }
 
   .info {
-    min-height: 10rem;
-    padding: 1.5rem 1.2rem;
-    margin-top: 1rem;
+    padding: 0.7rem;
+    gap: 0.2rem;
   }
 
   .titulo {
-    font-size: 1.3em;
-    margin: 0.3rem;
+    font-size: 1.1em;
+    margin: 0;
   }
 
   .descripcion {
+    font-size: 0.7rem;
+    line-height: 1.1;
+  }
+
+  .icono {
+    padding: 0.7rem;
+  }
+
+  .xd {
+    gap: 0.2rem;
+    margin: 0.1rem 0;
+  }
+
+  .dat2 {
+    padding: 0.35em 0.9rem;
+  }
+
+  .s {
+    padding: 0.2em;
+    font-size: 0.75em;
+  }
+
+  .dat1 {
+    margin-top: 0.2rem;
+    gap: 0.3rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .cont {
+    padding: 0.1rem 0;
+    gap: 0.2rem;
+  }
+
+  .s {
+    padding: 0.15em;
+    font-size: 0.7em;
+  }
+
+  .info {
+    padding: 0.6rem;
+    gap: 0.15rem;
+  }
+
+  .titulo {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .descripcion {
+    font-size: 0.65rem;
+  }
+
+  .dat1 {
+    margin-top: 0.2rem;
+    gap: 0.3rem;
+  }
+
+  .xd {
+    gap: 0.2rem;
+  }
+
+  .boton {
+    padding: 0.5rem 0.5em;
     font-size: 0.8rem;
-    line-height: 1.2;
-    margin: 0.3rem 0;
+    margin: 0.2rem 0;
+  }
+
+  .dat2 {
+    padding: 0.3em 0.8rem;
+  }
+
+  .icono {
+    padding: 0.7rem;
+  }
+
+  .igg {
+    padding: 1.2rem 1.2rem;
   }
 }
