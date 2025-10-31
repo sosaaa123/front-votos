@@ -10,6 +10,7 @@ export default function Stand() {
   const [mensaje, setMensaje] = useState("")
   const [confetti, setConfetti] = useState(false)
   const [vt, setVt] = useState(false)
+  const [nt, setNt] = useState(false)
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -33,7 +34,6 @@ export default function Stand() {
       .then((result) => {
         setMensaje(result.mensaje)
         console.log(result)
-        alert(result.mensaje)
         if (result.estado) {
           setVt(true)
           setConfetti(true)
@@ -41,7 +41,7 @@ export default function Stand() {
             setConfetti(false)
           }, 800000)
         } else {
-          setConfetti(false)
+          setVt(true)
         }
       })
   }

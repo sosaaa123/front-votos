@@ -20,14 +20,15 @@ body {
   font-family: "Space Grotesk", "sans-serif";
   width: 100%;
   height: 100vh;
-  min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0 8rem 0;
+  padding: 1rem 0 1rem 0;
   background: linear-gradient(#bad5f4, #e9e8e8);
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .icono i {
@@ -42,16 +43,16 @@ body {
   justify-content: center;
   width: 1.8rem;
   height: 1.8rem;
-  padding: 1.8rem;
+  padding: 1.5rem;
   background-color: #fad7d7;
   border-radius: 50%;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
 
 .titulo {
   text-align: center;
-  font-size: 1.5em;
-  margin: 0.5rem;
+  font-size: 1.3em;
+  margin: 0.3rem;
   font-weight: 500;
 }
 
@@ -60,18 +61,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   border-radius: 20px;
   background-color: #f8f6f6;
   width: 90%;
   max-width: 400px;
   height: auto;
-  min-height: 12rem;
+  min-height: auto;
   box-shadow: 2px 2px 2px 1px #dcdcdc;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 .igg {
@@ -177,9 +178,9 @@ s p {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .dat1 div {
@@ -196,14 +197,14 @@ s p {
 
 .descripcion {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.3;
   color: #646363;
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
 }
 
 .boton {
-  margin: 2%;
+  margin: 0.5rem;
   width: 90%;
   max-width: 400px;
   padding: 0.7rem 0.6em;
@@ -241,8 +242,9 @@ s p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.8rem;
-  flex-shrink: 0;
+  gap: 0.6rem;
+  flex-shrink: 1;
+  margin: 0.5rem 0;
 }
 
 .s {
@@ -266,27 +268,82 @@ s p {
   width: 100%;
   padding: 0;
   flex-shrink: 0;
+  margin-bottom: 1rem;
 }
 
 @media (max-height: 700px) {
   .cont {
-    gap: 3rem;
-    padding: 0.5rem 0 1.5rem 0;
+    padding: 0.5rem 0 0.5rem 0;
   }
 
   .info {
-    min-height: 10rem;
-    padding: 0.8rem 1rem;
+    min-height: auto;
+    padding: 1rem 1rem;
+    margin-top: 0.5rem;
   }
 
   .titulo {
-    font-size: 1.3em;
-    margin: 0.3rem;
+    font-size: 1.2em;
+    margin: 0.2rem;
   }
 
   .descripcion {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     line-height: 1.2;
+    margin: 0.2rem 0;
+  }
+
+  .icono {
+    padding: 1.2rem;
+    margin-bottom: 1%;
+  }
+
+  .xd {
+    gap: 0.5rem;
     margin: 0.3rem 0;
+  }
+
+  .dat2 {
+    padding: 0.5em 1.2rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .cont {
+    padding: 0.3rem 0;
+    gap: 0.5rem;
+  }
+
+  .s {
+    padding: 0.3em;
+    font-size: 0.8em;
+  }
+
+  .info {
+    padding: 0.8rem 1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .titulo {
+    font-size: 1.1em;
+  }
+
+  .descripcion {
+    font-size: 0.7rem;
+  }
+
+  .dat1 {
+    margin-top: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .xd {
+    gap: 0.4rem;
+  }
+
+  .boton {
+    padding: 0.6rem 0.5em;
+    font-size: 0.85rem;
   }
 }
