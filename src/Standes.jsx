@@ -20,9 +20,10 @@ export default function Standes() {
       {datos.map((s) => (
         <Link to={`/stand/${s.id_stand}`}>
           <div key={s.id_stand} className="standes-cont">
-            <div className="icon">
-              <i class="fa-solid fa-graduation-cap"></i>
-            </div>
+            <Icono
+              especialidad={s.orientacion}
+              clase={datos.id_stand % 2 === 0 ? "rnn rnnn" : "rnn rnnnn"}
+            ></Icono>
             <div className="inff">
               <h3>{s.nombre}</h3>
               <div className="pes">

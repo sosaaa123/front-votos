@@ -4,6 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vh;
+  height: 100vh;
   background: linear-gradient(
     #bad5f4,
     #c7dbf2,
@@ -80,4 +82,29 @@
 
 .pes p {
   margin-right: 3px;
+}
+
+.rnn {
+  width: 0.5em;
+  height: 0.5em;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.rnnn {
+  background-color: #c7dbf2;
+  color: #bad5f4;
+}
+
+.rnnnn {
+  background-color: #f8e0e0;
+  color: #f26f6f;
+}
+
+.rnn i {
+  font-size: 0.8rem;
 }

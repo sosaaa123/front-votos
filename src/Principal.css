@@ -14,6 +14,10 @@
   font-weight: 500;
 }
 
+.animated-background canvas {
+  filter: hue-rotate(180deg) brightness(1.2);
+}
+
 .redes {
   display: flex;
   flex-direction: row;

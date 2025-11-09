@@ -1,25 +1,28 @@
-function Icono({ especialidad }) {
-  if (especialidad == "Programacion") {
+function Icono({ especialidad, clase }) {
+  if (especialidad == "Programación" || especialidad == "programacion") {
     return (
-      <div className="icono">
-        <i class="fa-solid fa-desktop"></i>
+      <div className={clase}>
+        <i class="fa-solid fa-code"></i>
       </div>
     )
-  } else if (especialidad == "Electromecanica") {
+  } else if (
+    especialidad == "Electromecánica" ||
+    especialidad == "electromecanica"
+  ) {
     return (
-      <div className="icono">
+      <div className={clase}>
         <i class="fa-solid fa-gear"></i>
       </div>
     )
-  } else if (especialidad == "Quimica") {
+  } else if (especialidad == "Química" || especialidad == "quimica") {
     return (
-      <div className="icono">
+      <div className={clase}>
         <i class="fa-solid fa-atom"></i>
       </div>
     )
   } else {
     return (
-      <div className="icono">
+      <div className={clase}>
         <i class="fa-solid fa-graduation-cap"></i>
       </div>
     )

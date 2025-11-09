@@ -30,12 +30,16 @@ body {
   overflow: hidden;
 }
 
-.icono i {
+.contet {
+  padding: 1rem 0;
+}
+
+.iccn i {
   font-size: 1.3rem;
   color: #fd9393;
 }
 
-.icono {
+.iccn {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,6 +76,7 @@ body {
   margin-top: 2rem;
   margin-bottom: 1rem;
   flex-shrink: 0;
+  animation: flotandoo 3s ease-in-out infinite;
 }
 
 .igg {
@@ -225,6 +230,13 @@ s p {
   border-radius: 15px;
   font-size: 0.9rem;
   flex-shrink: 0;
+  transition: background-color 0.3s ease-in-out;
+  animation: flotandoo 3s ease-in-out infinite;
+}
+
+.boton:hover {
+  background-color: #fb9595;
+  color: #f8e5e5;
 }
 
 .dato {
@@ -267,6 +279,7 @@ s p {
   gap: 0.5rem;
   flex-shrink: 0;
   font-size: 0.9em;
+  animation: flotandoo 3s ease-in-out infinite;
 }
 
 .btn-div {
@@ -300,4 +313,33 @@ s p {
     line-height: 1.2;
     margin: 0.3rem 0;
   }
+}
+
+.slide-down {
+  animation: slideDown 1.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-70%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flotandoo {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.srt {
+  animation: flotandoo 3s ease-in-out infinite;
 }
