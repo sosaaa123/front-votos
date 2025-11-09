@@ -82,10 +82,10 @@ export default function Stand() {
                 <p className="descripcion slide-down"> {datos.descripcion}</p>
                 <div className="dat1">
                   <div>
-                    <p className="slide-down">{datos.curso}</p>
+                    <p>{datos.curso}</p>
                   </div>
                   <div>
-                    <p className="slide-down">{datos.orientacion}</p>
+                    <p>{datos.orientacion}</p>
                   </div>
                 </div>
               </div>

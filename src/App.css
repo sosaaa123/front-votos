@@ -279,7 +279,6 @@ s p {
   gap: 0.5rem;
   flex-shrink: 0;
   font-size: 0.9em;
-  animation: flotandoo 3s ease-in-out infinite;
 }
 
 .btn-div {
@@ -336,7 +335,7 @@ s p {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-6px);
+    transform: translateY(-4px);
   }
 }
 

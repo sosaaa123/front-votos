@@ -1,11 +1,15 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
 .standes {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vh;
-  height: 100vh;
+  width: 100vw;
   background: linear-gradient(
     #bad5f4,
     #c7dbf2,
@@ -19,7 +23,12 @@
 
 .standes h1 {
   font-weight: 500;
-  margin-bottom: 5rem;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  padding: 1.2rem 2rem;
+  border-radius: 15px;
+  background-color: white;
+  animation: flotandoo 4s ease-in-out infinite;
 }
 
 .standes a {
@@ -39,6 +48,11 @@
   background-color: #f8f6f6;
   box-shadow: 1px 1px 2px 1px #dcdcdc;
   gap: 8%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.standes-cont:hover {
+  background-color: #fcdcdc;
 }
 
 .inff {
@@ -65,6 +79,10 @@
   font-size: 0.9em;
   margin: 0;
   font-weight: 500;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .standes-cont p {
@@ -107,4 +125,25 @@
 
 .rnn i {
   font-size: 0.8rem;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-70%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flotandoo {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
 }
