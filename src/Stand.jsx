@@ -129,10 +129,10 @@ export default function Stand() {
       ) : (
         <div className="cont srt">
           <div className="igg">
-            <h2 className="titulo mm slide-down">
-              Stand inexistente o no encontrado
-            </h2>
-            <p className="slide-down">Expotec 2025</p>
+            <h2 className="titulo mm slide-down">Cargando...</h2>
+            <p className="slide-down">
+              Expotec <span className="veinte">2025</span>
+            </p>
           </div>
         </div>
       )}

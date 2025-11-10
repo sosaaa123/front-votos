@@ -21,13 +21,63 @@ html {
   );
 }
 
-.standes h1 {
-  font-weight: 500;
-  font-size: 1.4rem;
-  margin: 1rem 0;
-  padding: 1.2rem 2rem;
-  border-radius: 15px;
+.veinte {
+  color: #82b8f6;
+}
+
+.veinticinco {
+  color: #ed7474;
+}
+
+.cargando {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #c7dbf2;
+}
+
+.cargg {
+  padding: 3.5rem 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
   background-color: white;
+  border-radius: 25px;
+  box-shadow: 1px 1px 2px 1px #dcdcdc;
+  animation: flotandoo 4s ease-in-out infinite;
+}
+
+.cargg h2 {
+  margin: 0%;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.ccc {
+  margin: none;
+  margin: none;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.standes h1 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: rgb(52, 52, 52);
+  background-color: white;
+  border-bottom: 4px solid #f6d5d5;
+  border-left: 3px solid #f6d5d5;
+  border-top: 2px solid #f6d5d5;
+  border-right: 2px solid #f6d5d5;
+  margin: 1rem 0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 15px;
   animation: flotandoo 4s ease-in-out infinite;
 }
 
@@ -52,7 +102,8 @@ html {
 }
 
 .standes-cont:hover {
-  background-color: #fcdcdc;
+  background-color: #edf5ff;
+  box-shadow: none;
 }
 
 .inff {
@@ -114,8 +165,8 @@ html {
 }
 
 .rnnn {
-  background-color: #c7dbf2;
-  color: #bad5f4;
+  background-color: #dfecfa;
+  color: #9fc8f6;
 }
 
 .rnnnn {
@@ -144,6 +195,6 @@ html {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
   }
 }

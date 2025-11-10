@@ -14,6 +14,14 @@
   font-weight: 500;
 }
 
+.principal h1,
+.principal h2,
+.principal h3 {
+  margin: 0;
+  padding: 1rem 0;
+  background-color: white;
+}
+
 .animated-background canvas {
   filter: hue-rotate(180deg) brightness(1.2);
 }
