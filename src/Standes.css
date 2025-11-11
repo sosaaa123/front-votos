@@ -68,7 +68,7 @@ html {
 
 .standes h1 {
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: rgb(52, 52, 52);
   background-color: white;
   border-bottom: 4px solid #f6d5d5;
@@ -76,7 +76,7 @@ html {
   border-top: 2px solid #f6d5d5;
   border-right: 2px solid #f6d5d5;
   margin: 1rem 0;
-  padding: 0.6rem 1.2rem;
+  padding: 1rem 1.2rem;
   border-radius: 15px;
   animation: flotandoo 4s ease-in-out infinite;
 }
@@ -99,6 +99,7 @@ html {
   box-shadow: 1px 1px 2px 1px #dcdcdc;
   gap: 8%;
   transition: background-color 0.3s ease-in-out;
+  animation: flotandoo 3s ease-in-out infinite;
 }
 
 .standes-cont:hover {

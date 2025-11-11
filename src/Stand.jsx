@@ -77,9 +77,12 @@ export default function Stand() {
           ) : (
             <>
               <div className="s">
-                <nav>
-                  <p className="exp">Expotec </p> <p className="year"> 2025</p>
-                </nav>
+                <Link className="xd" to={"/stands"}>
+                  <nav>
+                    <p className="exp">Expotec </p>{" "}
+                    <p className="year"> 2025</p>
+                  </nav>
+                </Link>
               </div>
 
               <div className="info">

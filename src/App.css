@@ -88,7 +88,7 @@ body {
   padding: 1.8rem 1.8rem;
   border-radius: 20px;
   background-color: #f8f6f6;
-  width: 70%;
+  width: 75%;
   max-width: 400px;
   min-height: 13rem;
   box-shadow: 1px 1px 2px 2px #dcdcdc;
@@ -364,4 +364,10 @@ s p {
   background-color: #e9e7e7;
   border-radius: 20px;
   color: rgb(61, 61, 61);
+}
+
+.xd {
+  text-decoration: none;
+  margin: none;
+  padding: none;
 }
