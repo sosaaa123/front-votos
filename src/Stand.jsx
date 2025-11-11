@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import { Link } from "react-router-dom"
 import Icono from "./componentes/Icono"
 import Confetti from "react-confetti"
 export default function Stand() {
@@ -66,7 +67,12 @@ export default function Stand() {
                 </div>
               )}
               <h1 className="titulo mm">{mensaje}</h1>
-              <p className="ccc slide-down">Expotec 2025</p>
+              <p className="ccc slide-down">
+                Expotec <span className="kll">2025</span>
+              </p>
+              <Link className="vermas" to="/stands">
+                Ver mas stands
+              </Link>
             </div>
           ) : (
             <>

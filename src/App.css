@@ -352,3 +352,16 @@ s p {
 .srt {
   animation: flotandoo 3s ease-in-out infinite;
 }
+
+.kll {
+  color: #9ec4f1;
+}
+
+.vermas {
+  font-size: 0.8em;
+  text-decoration: none;
+  padding: 0.3em 0.8em;
+  background-color: #e9e7e7;
+  border-radius: 20px;
+  color: rgb(61, 61, 61);
+}
