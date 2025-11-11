@@ -17,9 +17,7 @@
 .principal h1,
 .principal h2,
 .principal h3 {
-  margin: 0;
-  padding: 1rem 0;
-  background-color: white;
+  margin: 1rem 0;
 }
 
 .animated-background canvas {
