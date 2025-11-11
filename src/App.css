@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   gap: 3rem;
   align-items: center;
-  padding: 1rem 0 8rem 0;
+  padding: 1rem 0 0 0;
   background: linear-gradient(#bad5f4, #e9e8e8);
   overflow: hidden;
 }
@@ -84,8 +84,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  padding: 1.5rem 1.5rem;
+  margin: auto 0 auto 0;
+  padding: 1.8rem 1.8rem;
   border-radius: 20px;
   background-color: #f8f6f6;
   width: 70%;
@@ -304,7 +304,7 @@ s p {
 @media (max-height: 700px) {
   .cont {
     gap: 3rem;
-    padding: 0.5rem 0 1.5rem 0;
+    padding: 0.5rem 0 0 0;
   }
 
   .info {
