@@ -55,12 +55,12 @@ export default function Standes() {
           ))}
           <footer className="fttt">
             <div className="redesz">
-              <button className="fb">
+              <button className="fbnn">
                 <a href="https://www.facebook.com/tecnicabrandsen/?locale=es_LA">
                   <i className="fa-brands fa-facebook-f"></i>
                 </a>
               </button>
-              <button className="ig">
+              <button className="ignn">
                 <a href="https://www.instagram.com/expotecnica1/">
                   <i className="fa-brands fa-instagram"></i>
                 </a>

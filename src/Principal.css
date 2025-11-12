@@ -1,27 +1,59 @@
 .principal {
-  padding: 5rem 0;
+  padding: 5rem 0 5rem 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   width: 100%;
   height: 100vh;
+  background: linear-gradient(to bottom, #c9ddf3 70%, white);
+}
+
+.flll {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .principal h3 {
-  color: #808080;
+  color: black;
+  background-color: white;
   font-weight: 500;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  padding: 0.5rem;
+  border-top: 3px solid #f15f5f;
+  border-left: 3px solid #74aff2;
+  border-bottom: 5px solid #74aff2;
+  border-right: 3px solid #f15f5f;
 }
 
 .principal h1,
-.principal h2,
-.principal h3 {
+.principal h2 {
   margin: 1rem 0;
 }
 
-.animated-background canvas {
-  filter: hue-rotate(180deg) brightness(1.2);
+.principal h2 {
+  animation: slideDown 5s ease-out infinite;
+  color: white;
+}
+
+.principal h1 {
+  font-weight: 500;
+  padding: 1rem;
+  background-color: white;
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3rem;
+  border-radius: 20px;
+  border-top: 3px solid #f68484;
+  border-bottom: 5px solid #f68484;
+  border-left: 5px solid #f68484;
+  border-right: 3px solid #f68484;
+  animation: flotandoo 2s ease-in-out infinite;
 }
 
 .redes {
@@ -30,16 +62,17 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  font-weight: 500;
 }
 
 .redes button {
   width: 2.5rem;
   height: 2.5rem;
-  border: none;
-  border-radius: 10px;
+
+  border-radius: 50%;
 }
 
-.fb a {
+.n a {
   color: #74aff2;
 }
 
@@ -48,28 +81,69 @@
   color: #c9ddf3;
 }
 
-.ig:hover {
+.ign:hover {
   background-color: #f0bcbc;
 }
 
-.ig a {
+.ign a {
   color: #f15f5f;
   width: 100%;
   height: 100%;
 }
 
-.fb {
-  background-color: #dee8f5;
+.fbn {
+  border: 4px solid #74aff2;
+  background-color: white;
   color: #74aff2;
   font-size: 1rem;
+  animation: flotandoo 3s ease-in-out infinite;
 }
 
-.ig {
-  background-color: #fad7d7;
+.fbn a {
+  color: #74aff2;
+}
+
+.ign {
+  border: 4px solid #f15f5f;
+  background-color: rgb(254, 236, 236);
   color: #f15f5f;
   font-size: 1.3rem;
+  animation: flotandoo 3s ease-in-out infinite;
 }
 
 .r {
-  margin-top: 5rem;
+  margin: 0 auto 0 auto;
+}
+
+.tt {
+  color: #cbe0f6;
+}
+
+.tn {
+  color: #f6a3a3;
+}
+
+.slide-down {
+  animation: slideDown 1.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-70%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flotandoo {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
 }

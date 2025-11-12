@@ -68,7 +68,7 @@ html {
 }
 
 .standes h1 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.4rem;
   color: rgb(52, 52, 52);
   background-color: white;
@@ -232,5 +232,28 @@ html {
 }
 
 .redesz button i {
+  margin: auto;
+}
+
+.fbnn i {
+  color: #82b8f6;
+}
+
+.fbnn,
+.ignn {
+  background-color: #fbf5f5;
+}
+
+.ignn {
+  background-color: #fde4e4;
+}
+
+.fbnn {
+  background-color: #e0edfc;
+}
+
+.ignn i {
+  color: #ed7474;
+  font-size: 1.1rem;
   margin: auto;
 }
