@@ -10,6 +10,7 @@ export default function Stand() {
   const [confetti, setConfetti] = useState(false)
   const [vt, setVt] = useState(false)
   const [nt, setNt] = useState(false)
+  const [horario, setHorario] = useState(false)
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -43,6 +44,7 @@ export default function Stand() {
         } else {
           if (result.ya_voto) setNt(true)
           setVt(true)
+          if (result.fuera_de_horario) setHorario(true)
         }
       })
   }
@@ -57,7 +59,7 @@ export default function Stand() {
         <div className={`cont ${vt || nt ? "contet" : ""}`}>
           {vt ? (
             <div className="igg srt">
-              {nt ? (
+              {nt || horario ? (
                 <div className="ppp x">
                   <i class="fa-solid fa-xmark"></i>
                 </div>
