@@ -10,7 +10,7 @@ export default function Stand() {
   const [confetti, setConfetti] = useState(false)
   const [vt, setVt] = useState(false)
   const [nt, setNt] = useState(false)
-  const [horario, setHorario] = useState(false)
+  const [horario, setHorario] = useState(true)
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
